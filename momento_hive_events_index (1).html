@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Momento Hive Events — Premium Event Management</title>
+  <meta name="description" content="Momento Hive Events — Wedding, Birthday, Corporate, Decorations, Catering, Photography. White & Gold premium theme." />
+  <style>
+    :root{--bg:#ffffff;--gold:#c89b4a;--dark:#0b0b0b;--muted:#666}
+    *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    body{margin:0;background:var(--bg);color:var(--dark);line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#f6e7bf);display:flex;align-items:center;justify-content:center;font-weight:700;color:#111}
+    .brand h1{font-size:18px;margin:0}
+    nav{display:flex;gap:18px}
+    .btn-cta{background:var(--gold);padding:10px 14px;border-radius:10px;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;padding:36px;border-radius:16px;background:linear-gradient(180deg,rgba(250,248,246,0.7),rgba(255,255,255,0.9));box-shadow:0 6px 30px rgba(0,0,0,0.06);margin-bottom:26px}
+    .hero-left h2{margin:0;font-size:28px}
+    .tag{color:var(--muted);margin-top:8px}
+    .hero-cta{margin-top:18px;display:flex;gap:12px}
+
+    .hero-media{border-radius:12px;overflow:hidden;min-height:220px;background:url('https://images.unsplash.com/photo-1529973565456-8f6d9a94b7d1?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=') center/cover no-repeat}
+
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:22px}
+    .card{padding:18px;border-radius:12px;border:1px solid rgba(0,0,0,0.04);background:#fff}
+    .card h3{margin:0 0 8px 0}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-bottom:22px}
+    .gallery img{width:100%;height:110px;object-fit:cover;border-radius:10px}
+
+    /* About & Contact */
+    .two-col{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .contact-card{padding:18px;border-radius:12px;border:1px solid rgba(0,0,0,0.04);background:#fff}
+    .contact-card a{display:inline-block;margin-top:8px}
+
+    footer{text-align:center;color:var(--muted);margin:26px 0 60px}
+
+    /* Responsive */
+    @media (max-width:880px){.two-col{grid-template-columns:1fr}.hero{padding:18px}.hero-left h2{font-size:22px}}
+
+    /* small flourishes */
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(200,155,74,0.12);color:var(--gold);font-weight:600}
+    .muted{color:var(--muted)}
+    .grid-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .package{border-radius:10px;padding:12px;border:1px solid rgba(200,155,74,0.12)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">MH</div>
+        <div>
+          <h1>Momento Hive Events</h1>
+          <div class="muted">Premium Event Management</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a class="btn-cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <span class="badge">Premium • White & Gold</span>
+        <h2>Memorable events. Flawless execution.</h2>
+        <p class="tag">Weddings, birthdays, corporate events — curated with attention to detail. Elegant decor, trusted vendors, full-service coordination.</p>
+        <div class="hero-cta">
+          <a class="btn-cta" href="tel:+919542607415">Call: +91 95426 07415</a>
+          <a class="btn-cta" href="https://wa.me/919542607415" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-media" aria-hidden="true"></div>
+    </section>
+
+    <section>
+      <h3 id="services">Our Services</h3>
+      <div class="services">
+        <div class="card">
+          <h3>Wedding Planning</h3>
+          <p class="muted">Full wedding coordination — from rituals to reception. Includes vendor negotiation, timeline, and on-day management.</p>
+        </div>
+        <div class="card">
+          <h3>Birthday Events</h3>
+          <p class="muted">Creative themes, décor, activities and kid-friendly options. We handle invites, venue, and entertainment.</p>
+        </div>
+        <div class="card">
+          <h3>Corporate Events</h3>
+          <p class="muted">Product launches, conferences, team offsites and gala dinners — professionally managed end-to-end.</p>
+        </div>
+        <div class="card">
+          <h3>Decorations</h3>
+          <p class="muted">Elegant white & gold theme options, stage dressing, florals and bespoke installations.</p>
+        </div>
+        <div class="card">
+          <h3>Catering</h3>
+          <p class="muted">Trusted catering partners — buffet, plated service, live counters and customised menus.</p>
+        </div>
+        <div class="card">
+          <h3>Photography</h3>
+          <p class="muted">Experienced photographers for ceremonies, candid coverage, and albums.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 id="packages">Popular Packages</h3>
+      <div class="grid-row" style="margin-bottom:18px">
+        <div class="package">
+          <strong>House Ceremony Package</strong>
+          <div class="muted">Decor, priest coordination, photography — customised to your home.</div>
+        </div>
+        <div class="package">
+          <strong>Haldi & Engagement</strong>
+          <div class="muted">Colourful haldi setups, engagement backdrops, intimate guest handling.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 id="gallery">Gallery</h3>
+      <p class="muted">A few highlights — tap any image to view full size.</p>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="event 1">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" alt="event 2">
+        <img src="https://images.unsplash.com/photo-1526481280698-8b0e85d4c7b7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" alt="event 3">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=4" alt="event 4">
+      </div>
+    </section>
+
+    <section class="two-col" id="about" style="margin-top:22px">
+      <div>
+        <h3>About Momento Hive Events</h3>
+        <p class="muted">Momento Hive Events specialises in crafting premium, unforgettable experiences. We blend modern design with traditional warmth — ensuring every celebration is personal, elegant, and flawlessly executed.</p>
+        <ul class="muted">
+          <li>Experienced planners & vendor network</li>
+          <li>Custom décor and curated menus</li>
+          <li>Transparent pricing and reliable timelines</li>
+        </ul>
+      </div>
+      <aside class="contact-card" id="contact">
+        <h4>Contact & Booking</h4>
+        <p style="margin:6px 0"><strong>Phone:</strong> <a href="tel:+919542607415">+91 95426 07415</a></p>
+        <p style="margin:6px 0"><strong>WhatsApp:</strong> <a href="https://wa.me/919542607415" target="_blank">Chat on WhatsApp</a></p>
+        <p style="margin:6px 0"><strong>Services:</strong> Wedding, Birthday, Corporate, Decorations, Catering, Photography, House Ceremony, Haldi, Engagement</p>
+        <p style="margin:6px 0"><strong>Quick Request:</strong></p>
+        <p class="muted">Send us a message on WhatsApp with your event date and guest count and we'll reply with a tailored package.</p>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Momento Hive Events • Premium event planning in your city
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
